@@ -1,0 +1,201 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: 1px solid yellowgreen;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.is_between {
+    justify-content: space-between;
+}
+
+.is_center {
+    justify-content: center;
+}
+
+.is_around {
+    justify-content: space-around;
+}
+
+span {
+    display: block;
+    font-size: 56px;
+}
+
+body {
+    width: 75%;
+    margin-inline: auto;
+    font-size: 12px;
+    /* outline: 1px solid #000; */
+    /* position: relative; */
+    /* overflow-x: hidden; */
+    /* background-color: #8a71aa2f; */
+}
+
+header {
+    h1 {
+        margin: 0;
+        /* font-size: 50px; */
+        font-family: "Sacramento", cursive;
+        font-weight: 400;
+        font-style: normal;
+        /* color: #fff; */
+    }
+}
+
+h2 {
+    color: #0f0415;
+    padding: 0.5%;
+    /* font-size: 32px; */
+    font-size: 50px;
+    margin: 2% 0;
+    font-weight: 500;
+    font-family: "Sacramento", cursive;
+}
+
+main>section {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+#works>*>section {
+    justify-content: center;
+}
+
+section>*>section {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 300px;
+    padding: 0.5%;
+}
+
+section p {
+    text-align: center;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+    padding: 10%;
+    border-radius: 50%;
+    margin: 5% 0;
+}
+
+.circle img {
+    width: 80%;
+}
+
+.achievements {
+    img {
+        height: 400px;
+        width: 300px;
+        object-fit: cover;
+    }
+}
+
+input {
+    font-size: 24px;
+    width: 100%;
+    border-color: #fff;
+}
+
+input:focus {
+    outline: #fff;
+}
+
+textarea {
+    font-size: 24px;
+    width: 100%;
+}
+
+button {
+    margin-inline: auto;
+    display: block;
+    text-align: center;
+    padding: 1.5% 6%;
+    font-weight: bold;
+    background-color: #462952;
+    color: #fff;
+    border: none;
+}
+
+button:hover {
+    background-color: #808080;
+    color: #fff;
+    cursor: pointer;
+}
+
+.relative {
+    position: relative;
+}
+
+.contact>p {
+    margin: 1% 0;
+}
+
+.label {
+    font-size: 12px;
+    top: -15px;
+    left: 0px;
+    /* color: #fff; */
+}
+
+label {
+    position: absolute;
+    top: 3px;
+    left: 10px;
+    /* color: #ebe8e8; */
+}
+
+#flow {
+    background-color: #0f0415;
+    color: #fff;
+    width: 100vw;
+    /* padding: 2rem 0; */
+    margin: 0 calc(50% - 50vw);
+
+    div {
+        width: 74.2%;
+        margin-inline: auto;
+    }
+
+    h2 {
+        color: #fff;
+        margin: 2% 0;
+    }
+}
+
+#textarea {
+    height: 200px;
+}
+
+
+/* 参考サイト */
+/* 色：https://colors.muz.li/ai-color-combination-generator/ */
+/* アイコン：https://icooon-mono.com/ */
+/* デザイン：https://umi.design/ */

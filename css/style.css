@@ -146,6 +146,16 @@ main > img{
     }
 }
 
+#style{
+    img{
+        width: 50%;
+    }
+    div:nth-of-type(2){
+        text-align: right;
+    }
+
+}
+
 
 main>section {
     display: flex;

@@ -11,9 +11,9 @@ ul {
     padding: 0;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 .flex {
     display: flex;
@@ -35,11 +35,6 @@ li {
     justify-content: space-around;
 }
 
-span {
-    display: block;
-    font-size: 56px;
-}
-
 body {
     width: 75%;
     margin-inline: auto;
@@ -58,24 +53,105 @@ header {
         font-weight: 400;
         font-style: normal;
         /* color: #fff; */
+        /* margin-bottom: 5%; */
     }
+
 }
 
 h2 {
     color: #0f0415;
     padding: 0.5%;
     /* font-size: 32px; */
-    font-size: 50px;
+    /* font-size: 50px; */
     margin: 2% 0;
     font-weight: 500;
-    font-family: "Sacramento", cursive;
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 10%;
 }
+
+main > img{
+    width: 100%;
+}
+
+#concept {
+    p {
+        font-family: "Noto Serif JP", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-optical-sizing: auto;
+    }
+
+    p:nth-of-type(1) {
+        font-size: 13px;
+    }
+
+    p:nth-of-type(2) {
+        font-size: 8px;
+    }
+}
+
+#menu {
+    font-family: "EB Garamond", serif;
+    background-image: url("../img/menu_background.png");
+    height: 530px;
+    width: 100vw;
+    /* padding: 2rem 0; */
+    margin: 0 calc(50% - 50vw);
+}
+
+#menu>div {
+    width: 75%;
+    margin-inline: auto;
+
+    h2 {
+        text-align: center;
+    }
+
+    ul {
+        list-style-position: inside;
+        list-style-image: url("../img/icon_scissors.png");
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+
+        li img {
+            vertical-align: bottom;
+        }
+
+        li div {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            line-height: 14px;
+        }
+    }
+}
+
+#more {
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        font-family: "Yaldevi", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
 
 main>section {
     display: flex;
     flex-flow: column;
-    justify-content: center;
-    margin: 2% 0;
+    /* justify-content: center; */
+    margin: 10% 0;
 }
 
 #works>*>section {
@@ -88,10 +164,6 @@ section>*>section {
     align-items: center;
     width: 300px;
     padding: 0.5%;
-}
-
-section p {
-    text-align: center;
 }
 
 .circle {

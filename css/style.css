@@ -253,7 +253,7 @@ main>img {
     dl {
         display: flex;
         flex-wrap: wrap;
-        margin-top:3%;
+        margin-top: 3%;
     }
 
     dt {
@@ -314,25 +314,27 @@ main>img {
     }
 }
 
-#top{
+#top {
     margin-top: 20%;
     text-align: center;
-    h2{
+
+    h2 {
         font-size: 13px;
         margin: 0;
     }
 }
 
-footer{
-        width: 100vw;
-        margin: 0 calc(50% - 50vw);
-        margin-top: 10%;
-        background-color: #DCE8EF;
-        padding: 5% 0;
-        small{
-            display: block;
-            text-align: center;
-        }
+footer {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+    margin-top: 10%;
+    background-color: #DCE8EF;
+    padding: 5% 0;
+
+    small {
+        display: block;
+        text-align: center;
+    }
 }
 
 
@@ -456,8 +458,117 @@ label {
     height: 200px;
 }
 
+.main_img_fadeUp {
+    opacity: 0;
+    animation: fadein 3s ease-out forwards;
+}
+
+@keyframes fadein {
+    0% {
+        transform: translateY(10px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+/* #style{
+    height: 100vh;
+} */
+
+#style img {
+    opacity: 0;
+    /* animation: fadein 3s ease-out forwards; */
+    /* スクロールアニメーションの設定 */
+    /* animation: fadein_img 5s ease-out forwards; */
+    /* animation: fadein 5s linear both; */
+    /* アニメーションを指定。イージングはlinear。animation-fill-modeはboth */
+    /* animation-timeline: view(); */
+    /* animation-range: contain 0% contain 50%; */
+    /* animation-range: contain 0% contain 100%; */
+    /* 開始: 要素がビューポートに完全に入った時、終了: ビューポートの真ん中 */
+
+    /* animation: fadein linear both; */
+    animation: fadein_img ease-out forwards;
+    animation-duration: 1s;
+    /* animation-timeline: view(); */
+    animation-range: cover;
+
+}
+
+.reveal {
+    transform: translate(0, 0);
+    background-position: right 0% center;
+}
+
+@keyframes fadein_img {
+    0% {
+        transform: translateY(20px);
+        opacity: 0
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1
+    }
+}
+
+@keyframes reveal-image {
+    from {
+        clip-path: inset(30% round 20%);
+    }
+
+    to {
+        clip-path: inset(0);
+    }
+}
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 2.0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    /* animation: fadein 3s ease-out forwards; */
+}
+
+.achievements_fadeUp {
+    animation: fadein 2s ease-out forwards;
+    /* animation-name: fadeUpAnime;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    opacity: 0; */
+}
+
+@keyframes fadeUpAnime {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    /* from {
+        opacity: 0;
+        transform: translateY(300px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    } */
+}
 
 /* 参考サイト */
+/* https://gray-code.com/html_css/setting-image-for-icon-of-list/#google_vignette */
+/* https://developer.mozilla.org/ja/docs/Web/CSS/list-style-image */
+/* https://www.i-ryo.com/entry/2017/10/12/071107 */
+
 /* 色：https://colors.muz.li/ai-color-combination-generator/ */
 /* アイコン：https://icooon-mono.com/ */
 /* デザイン：https://umi.design/ */
